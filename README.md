@@ -5,6 +5,14 @@
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
+## Setup
+
+Install the module to your Nuxt application:
+
+```bash
+pnpm i -D nuxt-gsuite
+```
+
 <!-- Badges -->
 
 [npm-version-src]: https://img.shields.io/npm/v/my-module/latest.svg?style=flat&colorA=020420&colorB=00DC82
