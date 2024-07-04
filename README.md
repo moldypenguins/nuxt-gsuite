@@ -43,9 +43,8 @@ _**Craig Roberts**_
 
 ## License
 
-Copyright © 2023 Fireman Sam  
-Licensed under the GNU General Public License Version 3  
-See [LICENSE.md](LICENSE.md) or [https://www.gnu.org/licenses/gpl-3.0.html](https://www.gnu.org/licenses/gpl-3.0.html) for more details
+Copyright © 2024 CR Development. Licensed under the MIT license.  
+See [LICENSE.md](LICENSE.md) or [https://opensource.org/license/mit](https://opensource.org/license/mit) for more details
 
 <!-- Badges -->
 
