@@ -3933,7 +3933,7 @@ const appConfig = defuFn(inlineAppConfig);
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "fef81df2-65ce-472a-a85e-6f323c64a990",
+    "buildId": "64d2b9bd-b625-4a69-8c63-52de8d6690a9",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -5225,51 +5225,51 @@ const assets = {
   "/_nuxt/D_X2kP3v.js": {
     "type": "text/javascript; charset=utf-8",
     "etag": "\"1cb2a-eRCJOYkbpFkiEfoffmQTXzrQpcY\"",
-    "mtime": "2024-07-05T22:50:40.416Z",
+    "mtime": "2024-07-05T23:33:41.839Z",
     "size": 117546,
     "path": "../public/_nuxt/D_X2kP3v.js"
   },
   "/_nuxt/error-404.CPoJt-Mw.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"de4-HoYY+VULRLxo9INpsMyVuP/BSaU\"",
-    "mtime": "2024-07-05T22:50:40.418Z",
+    "mtime": "2024-07-05T23:33:41.842Z",
     "size": 3556,
     "path": "../public/_nuxt/error-404.CPoJt-Mw.css"
   },
   "/_nuxt/error-500.CRm5MgNe.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"75c-aZv8f9SzIABfsNN4kJWna4Zm66U\"",
-    "mtime": "2024-07-05T22:50:40.416Z",
+    "mtime": "2024-07-05T23:33:41.840Z",
     "size": 1884,
     "path": "../public/_nuxt/error-500.CRm5MgNe.css"
   },
   "/_nuxt/mJS2XvxE.js": {
     "type": "text/javascript; charset=utf-8",
     "etag": "\"200e-KJhGBfa3yJ9jT625vww0DixXBEY\"",
-    "mtime": "2024-07-05T22:50:40.415Z",
+    "mtime": "2024-07-05T23:33:41.842Z",
     "size": 8206,
     "path": "../public/_nuxt/mJS2XvxE.js"
   },
   "/_nuxt/N-EqdTw2.js": {
     "type": "text/javascript; charset=utf-8",
     "etag": "\"ab3-3Seg6G2rgSTyoPT3MI8LX4CwfB4\"",
-    "mtime": "2024-07-05T22:50:40.416Z",
+    "mtime": "2024-07-05T23:33:41.842Z",
     "size": 2739,
     "path": "../public/_nuxt/N-EqdTw2.js"
   },
   "/_nuxt/builds/latest.json": {
     "type": "application/json",
-    "etag": "\"47-Ug5ZTibMcVHm3Q07OWi/bls8UKg\"",
-    "mtime": "2024-07-05T22:50:41.030Z",
+    "etag": "\"47-8d8GCNMAY/JeL1fWdanTNVQJl/4\"",
+    "mtime": "2024-07-05T23:33:42.609Z",
     "size": 71,
     "path": "../public/_nuxt/builds/latest.json"
   },
-  "/_nuxt/builds/meta/fef81df2-65ce-472a-a85e-6f323c64a990.json": {
+  "/_nuxt/builds/meta/64d2b9bd-b625-4a69-8c63-52de8d6690a9.json": {
     "type": "application/json",
-    "etag": "\"8b-by38Hujh6+aroG0Yq4N0yWy4Rr0\"",
-    "mtime": "2024-07-05T22:50:41.031Z",
+    "etag": "\"8b-IPtv/Jj9YwYywBQx1xuaxoarLYc\"",
+    "mtime": "2024-07-05T23:33:42.609Z",
     "size": 139,
-    "path": "../public/_nuxt/builds/meta/fef81df2-65ce-472a-a85e-6f323c64a990.json"
+    "path": "../public/_nuxt/builds/meta/64d2b9bd-b625-4a69-8c63-52de8d6690a9.json"
   }
 };
 
