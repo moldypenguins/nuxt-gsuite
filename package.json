@@ -1,19 +1,15 @@
 {
   "name": "nuxt-gsuite",
   "type": "module",
-  "version": "1.0.0",
-  "description": "Nuxt Google Module",
-  "license": "MIT",
-  "repository": "moldypenguins/nuxt-gsuite",
+  "version": "0.1.1",
+  "description": "Nuxt 3 Google Module",
   "author": "Craig Roberts <craig.roberts@crdevel.com> (https://crdevel.com)",
-  "engines": {
-    "node": ">=",
-    "npm": "~1.0.20"
-  },
+  "license": "MIT",
   "funding": {
     "type": "github",
     "url": "https://github.com/sponsors/moldypenguins"
   },
+  "repository": "moldypenguins/nuxt-gsuite",
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",
@@ -26,13 +22,17 @@
   "files": [
     "dist"
   ],
+  "engines": {
+    "node": ">=21.x",
+    "pnpm": ">=9.4.0"
+  },
   "scripts": {
     "prepack": "nuxt-module-build build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
-    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
-    "release:local": "npm run lint && npm run test && npm run prepack",
+    "release": "pnpm run lint && pnpm run prepack && changelogen --release && pnpm publish && git push --follow-tags",
+    "release:local": "pnpm run lint && pnpm run test && pnpm run prepack",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
