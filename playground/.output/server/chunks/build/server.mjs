@@ -925,8 +925,11 @@ watch(hidden, (value) => {
 });
 const toggleBadge = (value) => hidden.value = value;
 function useRecaptcha() {
-  const { gsuite } = (/* @__PURE__ */ useRuntimeConfig()).public;
-  const execute = async (action) => await grecaptcha.execute(gsuite.recaptcha.siteKey, { action });
+  const gsuite = (/* @__PURE__ */ useRuntimeConfig()).public.gsuite;
+  const execute = async (action) => {
+    var _a;
+    return await grecaptcha.execute((_a = gsuite.recaptcha) == null ? void 0 : _a.siteKey, { action });
+  };
   const verify = async (token) => await $fetch(`/recaptcha/${token}`);
   return {
     hidden,
