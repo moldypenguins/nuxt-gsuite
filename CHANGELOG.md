@@ -3,6 +3,10 @@
 
 ## v0.1.3
 
+[compare changes](https://github.com/moldypenguins/nuxt-gsuite/compare/v0.1.3...v0.1.3)
+
+## v0.1.3
+
 [compare changes](https://github.com/moldypenguins/nuxt-gsuite/compare/v0.1.2...v0.1.3)
 
 ### 🏡 Chore
