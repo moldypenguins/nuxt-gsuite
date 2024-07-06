@@ -1,7 +1,7 @@
 {
   "name": "nuxt-gsuite",
   "type": "module",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Nuxt 3 Google Module",
   "author": "Craig Roberts <craig.roberts@crdevel.com> (https://crdevel.com)",
   "license": "MIT",
