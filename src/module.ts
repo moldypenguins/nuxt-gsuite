@@ -1,9 +1,9 @@
 import process from 'node:process'
 import { addImports, addPlugin, addServerHandler, createResolver, defineNuxtModule, logger } from '@nuxt/kit'
 import defu from 'defu'
-import type { NuxtGSuiteOptions } from './types'
+import type { NuxtGSuiteOptions, RecaptchaResponse } from './types'
 
-export * from './types'
+export { type RecaptchaResponse }
 
 declare module '#app' {
   const grecaptcha: any

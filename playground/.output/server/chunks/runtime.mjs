@@ -3933,7 +3933,7 @@ const appConfig = defuFn(inlineAppConfig);
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "292d48f5-a1a3-449e-9846-880116a142d2",
+    "buildId": "aa5df754-eea0-406a-a6fc-9fafe929154d",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -5225,51 +5225,51 @@ const assets = {
   "/_nuxt/DTJR8xyR.js": {
     "type": "text/javascript; charset=utf-8",
     "etag": "\"ab3-Hw66/AuMN7HMNh9DcWfIMGZKWNs\"",
-    "mtime": "2024-07-06T18:13:15.167Z",
+    "mtime": "2024-07-06T18:36:46.219Z",
     "size": 2739,
     "path": "../public/_nuxt/DTJR8xyR.js"
   },
   "/_nuxt/error-404.CPoJt-Mw.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"de4-HoYY+VULRLxo9INpsMyVuP/BSaU\"",
-    "mtime": "2024-07-06T18:13:15.167Z",
+    "mtime": "2024-07-06T18:36:46.217Z",
     "size": 3556,
     "path": "../public/_nuxt/error-404.CPoJt-Mw.css"
   },
   "/_nuxt/error-500.CRm5MgNe.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"75c-aZv8f9SzIABfsNN4kJWna4Zm66U\"",
-    "mtime": "2024-07-06T18:13:15.163Z",
+    "mtime": "2024-07-06T18:36:46.219Z",
     "size": 1884,
     "path": "../public/_nuxt/error-500.CRm5MgNe.css"
   },
   "/_nuxt/q-QPnIUX.js": {
     "type": "text/javascript; charset=utf-8",
     "etag": "\"1cb4b-LfjiVsggRq6ZnMvHUjnTaQO27mw\"",
-    "mtime": "2024-07-06T18:13:15.167Z",
+    "mtime": "2024-07-06T18:36:46.216Z",
     "size": 117579,
     "path": "../public/_nuxt/q-QPnIUX.js"
   },
   "/_nuxt/tr5hBR7C.js": {
     "type": "text/javascript; charset=utf-8",
     "etag": "\"200e-BFrr+q4DJEzbhPzMloMYcz7GmTk\"",
-    "mtime": "2024-07-06T18:13:15.167Z",
+    "mtime": "2024-07-06T18:36:46.219Z",
     "size": 8206,
     "path": "../public/_nuxt/tr5hBR7C.js"
   },
   "/_nuxt/builds/latest.json": {
     "type": "application/json",
-    "etag": "\"47-ua3aHiLcf4MppjA4T6nIMNs8Adk\"",
-    "mtime": "2024-07-06T18:13:16.186Z",
+    "etag": "\"47-j3ZPWZ8vox2yKFqVGHbL95JoZTQ\"",
+    "mtime": "2024-07-06T18:36:47.267Z",
     "size": 71,
     "path": "../public/_nuxt/builds/latest.json"
   },
-  "/_nuxt/builds/meta/292d48f5-a1a3-449e-9846-880116a142d2.json": {
+  "/_nuxt/builds/meta/aa5df754-eea0-406a-a6fc-9fafe929154d.json": {
     "type": "application/json",
-    "etag": "\"8b-poaS9IuwCsVzAuJSsAA8rOcdxSA\"",
-    "mtime": "2024-07-06T18:13:16.187Z",
+    "etag": "\"8b-1bxbWD/lT/6cwEwtInuzq5r12sY\"",
+    "mtime": "2024-07-06T18:36:47.268Z",
     "size": 139,
-    "path": "../public/_nuxt/builds/meta/292d48f5-a1a3-449e-9846-880116a142d2.json"
+    "path": "../public/_nuxt/builds/meta/aa5df754-eea0-406a-a6fc-9fafe929154d.json"
   }
 };
 
@@ -5469,21 +5469,11 @@ const _f4b49z = eventHandler((event) => {
 const _69Te4e = defineEventHandler(async (event) => {
   const { recaptcha } = useRuntimeConfig().gsuite;
   const token = getRouterParam(event, "token");
-  const verification = await $fetch(`https://www.google.com/recaptcha/api/siteverify`, {
+  return await $fetch(`https://www.google.com/recaptcha/api/siteverify`, {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: `secret=${recaptcha.secretKey}&response=${token}`
   });
-  if (verification.success === false) {
-    if (verification["error-codes"] && verification["error-codes"].length > 0) {
-      return { valid: false, errors: verification["error-codes"] };
-    } else {
-      return { valid: false, errors: ["Unknown Error."] };
-    }
-  } else if (verification.success === true && verification.score && verification.score < recaptcha.minScore) {
-    return { valid: false, errors: ["Suspected Bot."] };
-  }
-  return { valid: true };
 });
 
 const _lazy_ICNCMO = () => import('./routes/renderer.mjs').then(function (n) { return n.r; });
