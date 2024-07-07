@@ -1,4 +1,4 @@
-![[nuxt-gsuite](.github/images/nuxt-gsuite.png)][(https://github.com/moldypenguins/nuxt-gsuite)]
+![[nuxt-gsuite](.github/images/nuxt-gsuite.png)][https://github.com/moldypenguins/nuxt-gsuite]
 # nuxt-gsuite  
 ### Nuxt 3 Google Module  
 
