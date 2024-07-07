@@ -1,12 +1,14 @@
-![nuxt-gsuite](.github/images/nuxt-gsuite.png)
+![[nuxt-gsuite](.github/images/nuxt-gsuite.png)][(https://github.com/moldypenguins/nuxt-gsuite)]
 # nuxt-gsuite  
-### Nuxt 3 Google Module
+### Nuxt 3 Google Module  
 
-[![npm version][npm-version-src]][npm-version-href]
-[![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![Nuxt][nuxt-src]][nuxt-href]
-![Github-sponsors](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)
+[![NPM Version][npm-version-src]][npm-version-href]
+[![NPM Downloads][npm-downloads-src]][npm-downloads-href]
+[![Nuxt][nuxt-src]][nuxt-href]  
+
 [![License][license-src]][license-href]
+![Github-sponsors](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)
+
 
 
 ![Last Commit](https://img.shields.io/github/last-commit/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)  
