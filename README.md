@@ -1,19 +1,18 @@
-<picture>
-  <img alt="nuxt-gsuite" src=".github/images/nuxt-gsuite.png">
-</picture>
-<h1>nuxt-gsuite</h1>
-<h3>Nuxt Google Module</h3>
+![nuxt-gsuite](.github/images/nuxt-gsuite.png)
+# nuxt-gsuite  
+### Nuxt 3 Google Module
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
-[![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]  
-![License](https://img.shields.io/github/license/moldypenguins/FiremanSam?logo=GNU&style=for-the-badge&color=BD0000)
-![Last Commit](https://img.shields.io/github/last-commit/moldypenguins/FiremanSam?style=for-the-badge&logo=GitHub)  
-![Open Issues](https://img.shields.io/github/issues-raw/moldypenguins/FiremanSam?style=for-the-badge&logo=GitHub)
-![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/moldypenguins/FiremanSam?style=for-the-badge&logo=GitHub)  
-![CodeQL](https://img.shields.io/github/actions/workflow/status/moldypenguins/FiremanSam/codeql.yml?label=CodeQL&logo=github&style=for-the-badge)
-![ESLint](https://img.shields.io/github/actions/workflow/status/moldypenguins/FiremanSam/eslint.yml?label=ESLint&logo=eslint&style=for-the-badge)
+
+
+[![License][license-src]][license-href]
+![Last Commit](https://img.shields.io/github/last-commit/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)  
+![Open Issues](https://img.shields.io/github/issues-raw/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)
+![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)  
+![CodeQL](https://img.shields.io/github/actions/workflow/status/moldypenguins/nuxt-gsuite/codeql.yml?label=CodeQL&logo=github&style=for-the-badge)
+![ESLint](https://img.shields.io/github/actions/workflow/status/moldypenguins/nuxt-gsuite/eslint.yml?label=ESLint&logo=eslint&style=for-the-badge)
 ![Dependabot](https://img.shields.io/static/v1?style=for-the-badge&label=Dependabot&message=enabled&color=33CC11&logo=Dependabot)
 
 ---
@@ -46,11 +45,14 @@ See [LICENSE.md](LICENSE.md) or [https://opensource.org/license/mit](https://ope
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/my-module/latest.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-version-href]: https://npmjs.com/package/my-module
-[npm-downloads-src]: https://img.shields.io/npm/dm/my-module.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-downloads-href]: https://npmjs.com/package/my-module
-[license-src]: https://img.shields.io/npm/l/my-module.svg?style=flat&colorA=020420&colorB=00DC82
-[license-href]: https://npmjs.com/package/my-module
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-gsuite/latest.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-version-href]: https://npmjs.com/package/nuxt-gsuite
+
+[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-gsuite.svg?style=flat&colorA=020420&colorB=00DC82
+[npm-downloads-href]: https://npmjs.com/package/nuxt-gsuite
+
+[license-src]: https://img.shields.io/npm/l/nuxt-gsuite.svg?logo=MIT&style=for-the-badge&color=BD0000
+[license-href]: https://npmjs.com/package/nuxt-gsuite
+
 [nuxt-src]: https://img.shields.io/badge/Nuxt-020420?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
