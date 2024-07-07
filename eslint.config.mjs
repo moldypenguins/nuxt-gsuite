@@ -9,5 +9,6 @@ export default antfu({
     'dist',
     'node_modules',
     '**/*.md',
+    '.github/**/*.yml',
   ],
 })
