@@ -1,14 +1,14 @@
-![nuxt-gsuite](.github/images/nuxt-gsuite.png)
+[![nuxt-gsuite][logo-src]][npm-href]
 # nuxt-gsuite  
 ### Nuxt 3 Google Module  
 
-[![NPM Version][npm-version-src]][npm-version-href]
-[![NPM Downloads][npm-downloads-src]][npm-downloads-href]
+[![NPM Version][npm-version-src]][npm-href]
+[![NPM Downloads][npm-downloads-src]][npm-href]
 [![Nuxt][nuxt-src]][nuxt-href]  
 
-[![License][license-src]][license-href]
-![Github-sponsors](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)
-
+[![License][license-src]][npm-href]
+![Github-sponsors](https://img.shields.io/badge/github-sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=EA4AAA)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 
 ![Last Commit](https://img.shields.io/github/last-commit/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)  
@@ -48,20 +48,16 @@ Copyright © 2024 CR Development. Licensed under the MIT license.
 See [LICENSE.md](LICENSE.md) or [https://opensource.org/license/mit](https://opensource.org/license/mit) for more details
 
 <!-- Badges -->
-
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-gsuite/latest.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-version-href]: https://npmjs.com/package/nuxt-gsuite
-
-[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-gsuite.svg?style=flat&colorA=020420&colorB=00DC82
-[npm-downloads-href]: https://npmjs.com/package/nuxt-gsuite
-
-[license-src]: https://img.shields.io/npm/l/nuxt-gsuite.svg?logo=MIT&style=for-the-badge&color=BD0000
-[license-href]: https://npmjs.com/package/nuxt-gsuite
+[logo-src]: https://raw.githubusercontent.com/moldypenguins/nuxt-gsuite/master/.github/images/nuxt-gsuite.png
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-gsuite/latest.svg?style=for-the-badge&color=CD0000&logo=npm&logoColor=white
+[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-gsuite.svg?style=for-the-badge&color=CD0000&logo=npm&logoColor=white
+[license-src]: https://img.shields.io/npm/l/nuxt-gsuite.svg?style=for-the-badge&color=CD0000&logo=npm&logoColor=white
+[npm-href]: https://npmjs.com/package/nuxt-gsuite
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=#00DC82
 [nuxt-href]: https://nuxt.com
 
 
-[codeql-src]: https://img.shields.io/github/actions/workflow/status/moldypenguins/firemansam/codeql.yml?label=CodeQL&style=for-the-badge&colorA=0F305F&logo=github&logoColor=white
-[eslint-src]: https://img.shields.io/github/actions/workflow/status/moldypenguins/nuxt-gsuite/eslint.yml?label=ESLint&style=for-the-badge&colorA=4B3263&logo=eslint&logoColor=white
+[codeql-src]: https://img.shields.io/badge/CodeQL-121011?style=for-the-badge&logo=github&logoColor=white
+[eslint-src]: https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white
 [dependabot-src]: https://img.shields.io/badge/dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white
