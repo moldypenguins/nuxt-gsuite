@@ -6,14 +6,14 @@
 [![NPM Downloads][npm-downloads-src]][npm-href]
 [![License][license-src]][npm-href]  
 
+![Open Issues](https://img.shields.io/github/issues-raw/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)
+![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)
+![Last Commit](https://img.shields.io/github/last-commit/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)  
+
 [![Nuxt][nuxt-src]][nuxt-href]
 ![CodeQL][codeql-src]
 ![ESLint][eslint-src]
-![Dependabot][dependabot-src]  
-
-![Open Issues](https://img.shields.io/github/issues-raw/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)
-![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)
-![Last Commit](https://img.shields.io/github/last-commit/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)
+![Dependabot][dependabot-src]
 ![GitHub Sponsors](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=EA4AAA)  
 
 ---
