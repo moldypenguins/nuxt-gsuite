@@ -5,17 +5,14 @@
 [![NPM Version][npm-version-src]][npm-href]
 [![NPM Downloads][npm-downloads-src]][npm-href]
 [![License][license-src]][npm-href]  
-
-![Open Issues](https://img.shields.io/github/issues-raw/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)
-![Open Pull Requests](https://img.shields.io/github/issues-pr-raw/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)
-![Last Commit](https://img.shields.io/github/last-commit/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub)  
-
+[![Open Issues][openissues-src]][github-href]
+[![Open Pull Requests][pullrequests-src]][github-href]
+[![Last Commit][lastcommit-src]][github-href]  
 [![Nuxt][nuxt-src]][nuxt-href]
 ![CodeQL][codeql-src]
 ![ESLint][eslint-src]
 ![Dependabot][dependabot-src]
-![GitHub Sponsors](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=EA4AAA)  
-
+[![GitHub Sponsors][sponsors-src]][sponsors-href]
 ---
 
 ## Table of Contents
@@ -51,10 +48,15 @@ See [LICENSE.md](LICENSE.md) or [https://opensource.org/license/mit](https://ope
 [license-src]: https://img.shields.io/npm/l/nuxt-gsuite.svg?style=for-the-badge&color=CD0000&logo=npm&logoColor=white
 [npm-href]: https://npmjs.com/package/nuxt-gsuite
 
+[openissues-src]: https://img.shields.io/github/issues-raw/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub
+[pullrequests-src]: https://img.shields.io/github/issues-pr-raw/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub
+[lastcommit-src]: https://img.shields.io/github/last-commit/moldypenguins/nuxt-gsuite?style=for-the-badge&logo=GitHub
+[github-href]: https://github.com/moldypenguins/nuxt-gsuite
+
 [nuxt-src]: https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=#00DC82
 [nuxt-href]: https://nuxt.com
-
-
 [codeql-src]: https://img.shields.io/badge/CodeQL-121011?style=for-the-badge&logo=github&logoColor=white
 [eslint-src]: https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white
 [dependabot-src]: https://img.shields.io/badge/dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white
+[sponsors-src]: https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=EA4AAA
+[sponsors-href]: https://github.com/sponsors/moldypenguins
