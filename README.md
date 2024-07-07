@@ -1,7 +1,5 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset=".github/images/fireman_sam.png">
-  <source media="(prefers-color-scheme: light)" srcset=".github/images/fireman_sam.png">
-  <img alt="logo" src=".github/images/fireman_sam.png">
+  <img alt="nuxt-gsuite" src=".github/images/nuxt-gsuite.png">
 </picture>
 <h1>nuxt-gsuite</h1>
 <h3>Nuxt Google Module</h3>
