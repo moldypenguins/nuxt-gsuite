@@ -45,7 +45,7 @@ export default defineNuxtModule<NuxtGSuiteOptions>({
       addPlugin(resolver.resolve('./runtime/plugins/analytics'))
     }
     else {
-      logger.log('A measurement id is required for Analytics. Plugin will not be loaded.')
+      logger.warn('A measurement id is required for Analytics. Plugin will not be loaded.')
     }
 
     // add recaptcha
@@ -79,11 +79,9 @@ export default defineNuxtModule<NuxtGSuiteOptions>({
       })
     }
     else {
-      logger.log('A site key is required for reCAPTCHA. Plugin and route will not be loaded.')
+      logger.warn('A site key is required for reCAPTCHA. Plugin and route will not be loaded.')
     }
 
-    _nuxt.hook('ready', async () => {
-      logger.info('nuxt-gsuite module has been initialized!')
-    })
+    logger.success('`nuxt-gsuite` is ready!')
   },
 })
