@@ -55,7 +55,7 @@ See [LICENSE.md](LICENSE.md) or [https://opensource.org/license/mit](https://ope
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-002E3B?style=for-the-badge&logo=nuxtdotjs&logoColor=#00DC82
 [nuxt-href]: https://nuxt.com
-[codeql-src]: https://img.shields.io/badge/CodeQL-121011?style=for-the-badge&logo=github&logoColor=white
+[codeql-src]: https://img.shields.io/badge/CodeQL-30363D?style=for-the-badge&logo=github&logoColor=white
 [eslint-src]: https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white
 [dependabot-src]: https://img.shields.io/badge/dependabot-025E8C?style=for-the-badge&logo=dependabot&logoColor=white
 [sponsors-src]: https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=EA4AAA
