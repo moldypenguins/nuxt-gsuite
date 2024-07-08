@@ -316,7 +316,7 @@ const _sfc_main = {
     });
     return (_ctx, _push, _parent, _attrs) => {
       const _component_NuxtLink = __nuxt_component_0;
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "font-sans antialiased bg-white dark:bg-black text-black dark:text-white grid min-h-screen place-content-center overflow-hidden" }, _attrs))} data-v-f2ca4b51><div class="fixed left-0 right-0 spotlight z-10" data-v-f2ca4b51></div><div class="max-w-520px text-center z-20" data-v-f2ca4b51><h1 class="text-8xl sm:text-10xl font-medium mb-8" data-v-f2ca4b51>${ssrInterpolate(__props.statusCode)}</h1><p class="text-xl px-8 sm:px-0 sm:text-4xl font-light mb-16 leading-tight" data-v-f2ca4b51>${ssrInterpolate(__props.description)}</p><div class="w-full flex items-center justify-center" data-v-f2ca4b51>`);
+      _push(`<div${ssrRenderAttrs(mergeProps({ class: "font-sans antialiased bg-white dark:bg-black text-black dark:text-white grid min-h-screen place-content-center overflow-hidden" }, _attrs))} data-v-c6c1efc1><div class="fixed left-0 right-0 spotlight z-10" data-v-c6c1efc1></div><div class="max-w-520px text-center z-20" data-v-c6c1efc1><h1 class="text-8xl sm:text-10xl font-medium mb-8" data-v-c6c1efc1>${ssrInterpolate(__props.statusCode)}</h1><p class="text-xl px-8 sm:px-0 sm:text-4xl font-light mb-16 leading-tight" data-v-c6c1efc1>${ssrInterpolate(__props.description)}</p><div class="w-full flex items-center justify-center" data-v-c6c1efc1>`);
       _push(ssrRenderComponent(_component_NuxtLink, {
         to: "/",
         class: "gradient-border text-md sm:text-xl py-2 px-4 sm:py-3 sm:px-6 cursor-pointer"
@@ -339,10 +339,10 @@ const _sfc_main = {
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.10_eslint@9.6.0__chdr4bnp5hvcb3tulvrhy7uv3m/node_modules/nuxt/dist/app/components/error-404.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/nuxt/dist/app/components/error-404.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const error404 = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-f2ca4b51"]]);
+const error404 = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-c6c1efc1"]]);
 
 export { error404 as default };
-//# sourceMappingURL=error-404-DQKOa5yA.mjs.map
+//# sourceMappingURL=error-404-DI1Qxxgi.mjs.map

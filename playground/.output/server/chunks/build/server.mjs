@@ -531,7 +531,7 @@ const coreComposableNames = [
   "@unhead/vue": [...coreComposableNames, ...composableNames]
 });
 [CapoPlugin({ track: true })];
-const unhead_VgtXTy8ajD = /* @__PURE__ */ defineNuxtPlugin({
+const unhead_3Bi0E2Ktsf = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:head",
   enforce: "pre",
   setup(nuxtApp) {
@@ -677,7 +677,7 @@ function getRouteFromPath(fullPath) {
     href: fullPath
   };
 }
-const router_6mQ38mtoWp = /* @__PURE__ */ defineNuxtPlugin({
+const router_P0yWDWTO4H = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:router",
   enforce: "pre",
   setup(nuxtApp) {
@@ -865,7 +865,7 @@ const reducers = {
   Ref: (data) => isRef(data) && data.value,
   Reactive: (data) => isReactive(data) && toRaw(data)
 };
-const revive_payload_server_AByukWudtO = /* @__PURE__ */ defineNuxtPlugin({
+const revive_payload_server_ICvz7TjQsJ = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:revive-payload:server",
   setup() {
     for (const reducer in reducers) {
@@ -905,9 +905,9 @@ const analytics_Gr8TJHwfiv = /* @__PURE__ */ defineNuxtPlugin({
   }
 });
 const plugins = [
-  unhead_VgtXTy8ajD,
-  router_6mQ38mtoWp,
-  revive_payload_server_AByukWudtO,
+  unhead_3Bi0E2Ktsf,
+  router_P0yWDWTO4H,
+  revive_payload_server_ICvz7TjQsJ,
   components_plugin_KR1HBZs4kY,
   recaptcha_T54Xcwovqq,
   analytics_Gr8TJHwfiv
@@ -1008,8 +1008,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-DQKOa5yA.mjs').then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import('./error-500-BfItgnep.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-DI1Qxxgi.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./error-500-BWIVI7sq.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -1019,7 +1019,7 @@ const _sfc_main$1 = {
 const _sfc_setup$1 = _sfc_main$1.setup;
 _sfc_main$1.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.10_eslint@9.6.0__chdr4bnp5hvcb3tulvrhy7uv3m/node_modules/nuxt/dist/app/components/nuxt-error-page.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/nuxt/dist/app/components/nuxt-error-page.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
 const _sfc_main = {
@@ -1067,7 +1067,7 @@ const _sfc_main = {
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/.pnpm/nuxt@3.12.3_@opentelemetry+api@1.9.0_@parcel+watcher@2.4.1_@types+node@20.14.10_eslint@9.6.0__chdr4bnp5hvcb3tulvrhy7uv3m/node_modules/nuxt/dist/app/components/nuxt-root.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/nuxt/dist/app/components/nuxt-root.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 let entry;
