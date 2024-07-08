@@ -1,9 +1,8 @@
 import process from 'node:process'
 import { addImports, addPlugin, addServerHandler, createResolver, defineNuxtModule, logger } from '@nuxt/kit'
 import defu from 'defu'
-import type { NuxtGSuiteOptions, RecaptchaResponse } from './types'
 
-export { type RecaptchaResponse }
+export { type RecaptchaResponse } from './types'
 
 declare module '#app' {
   const grecaptcha: any
@@ -13,7 +12,49 @@ declare module '#app' {
   }
 }
 
-export default defineNuxtModule<NuxtGSuiteOptions>({
+export interface ModuleOptions {
+  recaptcha?: {
+    /**
+     *  Site key for Recaptcha.
+     *
+     * @default process.env.GSUITE_RECAPTCHA_SITEKEY
+     *
+     */
+    siteKey: string
+    /**
+     *  Secret key for Recaptcha.
+     *
+     * @default process.env.GSUITE_RECAPTCHA_SECRETKEY
+     *
+     */
+    secretKey?: string
+    /**
+     *  Minimum score to use for Recaptcha verification.
+     *
+     * @default 0.5
+     *
+     */
+    minScore?: number
+    /**
+     *  Version of Recaptcha to use.
+     *
+     * @default 'v3'
+     *
+     */
+    version?: string
+  }
+  analytics?: {
+    /**
+     *  Measurement Id for Analytics.
+     *
+     * @default process.env.GSUITE_ANALYTICS_MEASUREMENTID
+     *
+     */
+    measurementId: string
+  }
+}
+
+export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'nuxt-gsuite',
     configKey: 'gsuite',

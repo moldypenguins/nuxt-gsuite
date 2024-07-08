@@ -1,5 +1,6 @@
 import { ref, watch } from 'vue'
-import type { NuxtGSuiteOptions, RecaptchaResponse } from '../../types'
+import type { ModuleOptions } from '~/src/module'
+import type { RecaptchaResponse } from '~/src/types'
 import { useHead, useRuntimeConfig } from '#imports'
 
 const hidden = ref(false)
@@ -18,11 +19,11 @@ watch(hidden, (value) => {
 const toggleBadge = (value: boolean) => hidden.value = value
 
 export function useRecaptcha() {
-  const gsuite = useRuntimeConfig().public.gsuite as NuxtGSuiteOptions
+  const gsuite = useRuntimeConfig().public.gsuite as ModuleOptions
 
   const execute = async (action: string) => await grecaptcha.execute(gsuite.recaptcha?.siteKey, { action })
 
-  const verify = async (token: string) => await $fetch<RecaptchaResponse>(`/recaptcha/${token}`)
+  const verify = async (token: string) => await $fetch<RecaptchaResponse>(`/api/recaptcha/${token}`)
 
   return {
     hidden,

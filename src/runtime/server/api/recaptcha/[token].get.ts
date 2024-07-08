@@ -1,4 +1,4 @@
-import type { RecaptchaResponse } from '../../../../types'
+import type { RecaptchaResponse } from '~/src/types'
 import { defineEventHandler, getRouterParam, useRuntimeConfig } from '#imports'
 
 export default defineEventHandler(async (event) => {
