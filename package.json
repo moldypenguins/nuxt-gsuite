@@ -1,7 +1,7 @@
 {
   "name": "nuxt-gsuite",
   "type": "module",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Nuxt 3 Google Module",
   "author": "Craig Roberts <craig.roberts@crdevel.com> (https://crdevel.com)",
   "license": "MIT",
@@ -54,7 +54,6 @@
     "eslint": "^9.6.0",
     "eslint-plugin-antfu": "^2.3.4",
     "eslint-plugin-format": "^0.1.2",
-
     "nuxt": "^3.12.3",
     "typescript": "^5.5.3",
     "vitest": "1.6.0",
@@ -62,7 +61,6 @@
   },
   "pnpm": {
     "overrides": {
-
       "@typescript-eslint/eslint-plugin": "8.0.0-alpha.41",
       "@typescript-eslint/parser": "8.0.0-alpha.41",
       "@typescript-eslint/utils": "8.0.0-alpha.41",
