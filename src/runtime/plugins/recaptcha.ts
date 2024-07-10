@@ -5,7 +5,7 @@ export default defineNuxtPlugin((_nuxtApp) => {
   useHead({
     script: [
       {
-        src: `https://www.google.com/recaptcha/api.js?render=${gsuite.recaptcha.siteKey}`,
+        src: `https://www.google.com/recaptcha/api.js?render=${gsuite.recaptcha.siteKey}&trustedtypes=true`,
         async: true,
       },
     ],

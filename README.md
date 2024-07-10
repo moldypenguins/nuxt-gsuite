@@ -23,10 +23,28 @@
 
 ## Setup
 
-Install the module to your Nuxt application:
-
+Install the module to your Nuxt application:  
 ```bash
 pnpm i -D nuxt-gsuite
+```
+
+Add the module to your `nuxt.config.ts`:  
+```typescript
+export default defineNuxtConfig({
+  modules: [
+    ...,
+    'nuxt-gsuite',
+  ],
+  gsuite: {
+    recaptcha: {
+      siteKey: '[GSUITE_RECAPTCHA_SITEKEY]',
+      secretKey: '[GSUITE_RECAPTCHA_SECRETKEY]',
+    },
+    analytics: {
+      measurementId: '[GSUITE_ANALYTICS_MEASUREMENTID]',
+    },
+  },
+})
 ```
 
 ## Author
