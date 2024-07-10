@@ -10,6 +10,7 @@ import 'fs';
 import 'path';
 import 'node:fs';
 import 'node:url';
+import '../../../../../../../../../../src/runtime/server/routes/recaptcha/[token].get';
 import 'vue-bundle-renderer/runtime';
 import 'devalue';
 import '@unhead/ssr';
@@ -531,7 +532,7 @@ const coreComposableNames = [
   "@unhead/vue": [...coreComposableNames, ...composableNames]
 });
 [CapoPlugin({ track: true })];
-const unhead_3Bi0E2Ktsf = /* @__PURE__ */ defineNuxtPlugin({
+const unhead_67MoRThNW0 = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:head",
   enforce: "pre",
   setup(nuxtApp) {
@@ -677,7 +678,7 @@ function getRouteFromPath(fullPath) {
     href: fullPath
   };
 }
-const router_P0yWDWTO4H = /* @__PURE__ */ defineNuxtPlugin({
+const router_NfZ4TDfZAx = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:router",
   enforce: "pre",
   setup(nuxtApp) {
@@ -865,7 +866,7 @@ const reducers = {
   Ref: (data) => isRef(data) && data.value,
   Reactive: (data) => isReactive(data) && toRaw(data)
 };
-const revive_payload_server_ICvz7TjQsJ = /* @__PURE__ */ defineNuxtPlugin({
+const revive_payload_server_ToF4XyMDSP = /* @__PURE__ */ defineNuxtPlugin({
   name: "nuxt:revive-payload:server",
   setup() {
     for (const reducer in reducers) {
@@ -881,7 +882,7 @@ const recaptcha_T54Xcwovqq = /* @__PURE__ */ defineNuxtPlugin((_nuxtApp) => {
   useHead({
     script: [
       {
-        src: `https://www.google.com/recaptcha/api.js?render=${gsuite.recaptcha.siteKey}`,
+        src: `https://www.google.com/recaptcha/api.js?render=${gsuite.recaptcha.siteKey}&trustedtypes=true`,
         async: true
       }
     ]
@@ -905,9 +906,9 @@ const analytics_Gr8TJHwfiv = /* @__PURE__ */ defineNuxtPlugin({
   }
 });
 const plugins = [
-  unhead_3Bi0E2Ktsf,
-  router_P0yWDWTO4H,
-  revive_payload_server_ICvz7TjQsJ,
+  unhead_67MoRThNW0,
+  router_NfZ4TDfZAx,
+  revive_payload_server_ToF4XyMDSP,
   components_plugin_KR1HBZs4kY,
   recaptcha_T54Xcwovqq,
   analytics_Gr8TJHwfiv
@@ -926,11 +927,11 @@ watch(hidden, (value) => {
 const toggleBadge = (value) => hidden.value = value;
 function useRecaptcha() {
   const gsuite = (/* @__PURE__ */ useRuntimeConfig()).public.gsuite;
-  const execute = async (action) => {
+  const execute = async (action) => grecaptcha.ready(async () => {
     var _a;
     return await grecaptcha.execute((_a = gsuite.recaptcha) == null ? void 0 : _a.siteKey, { action });
-  };
-  const verify = async (token) => await $fetch(`/recaptcha/${token}`);
+  });
+  const verify = async (token) => await $fetch(`/api/recaptcha/${token}`);
   return {
     hidden,
     execute,
@@ -1008,8 +1009,8 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./error-404-DI1Qxxgi.mjs').then((r) => r.default || r));
-    const _Error = defineAsyncComponent(() => import('./error-500-BWIVI7sq.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./error-404-B0FmRAPH.mjs').then((r) => r.default || r));
+    const _Error = defineAsyncComponent(() => import('./error-500-BXgvPsLz.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
       _push(ssrRenderComponent(unref(ErrorTemplate), mergeProps({ statusCode: unref(statusCode), statusMessage: unref(statusMessage), description: unref(description), stack: unref(stack) }, _attrs), null, _parent));
@@ -1019,7 +1020,7 @@ const _sfc_main$1 = {
 const _sfc_setup$1 = _sfc_main$1.setup;
 _sfc_main$1.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/nuxt/dist/app/components/nuxt-error-page.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/.pnpm/nuxt@3.12.3_@parcel+watcher@2.4.1_@types+node@20.14.10_eslint@9.6.0_ioredis@5.4.1_magicast@0._lzmygl5ei7sryzin2nje4v4fpy/node_modules/nuxt/dist/app/components/nuxt-error-page.vue");
   return _sfc_setup$1 ? _sfc_setup$1(props, ctx) : void 0;
 };
 const _sfc_main = {
@@ -1067,7 +1068,7 @@ const _sfc_main = {
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/nuxt/dist/app/components/nuxt-root.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/.pnpm/nuxt@3.12.3_@parcel+watcher@2.4.1_@types+node@20.14.10_eslint@9.6.0_ioredis@5.4.1_magicast@0._lzmygl5ei7sryzin2nje4v4fpy/node_modules/nuxt/dist/app/components/nuxt-root.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
 let entry;

@@ -8,6 +8,7 @@ import 'fs';
 import 'path';
 import 'node:fs';
 import 'node:url';
+import '../../../../../../../../../../src/runtime/server/routes/recaptcha/[token].get';
 import '../routes/renderer.mjs';
 import 'vue-bundle-renderer/runtime';
 import 'devalue';
@@ -52,17 +53,17 @@ const _sfc_main = {
       ]
     });
     return (_ctx, _push, _parent, _attrs) => {
-      _push(`<div${ssrRenderAttrs(mergeProps({ class: "font-sans antialiased bg-white dark:bg-black text-black dark:text-white grid min-h-screen place-content-center overflow-hidden" }, _attrs))} data-v-2c66185b><div class="fixed -bottom-1/2 left-0 right-0 h-1/2 spotlight" data-v-2c66185b></div><div class="max-w-520px text-center" data-v-2c66185b><h1 class="text-8xl sm:text-10xl font-medium mb-8" data-v-2c66185b>${ssrInterpolate(__props.statusCode)}</h1><p class="text-xl px-8 sm:px-0 sm:text-4xl font-light mb-16 leading-tight" data-v-2c66185b>${ssrInterpolate(__props.description)}</p></div></div>`);
+      _push(`<div${ssrRenderAttrs(mergeProps({ class: "font-sans antialiased bg-white dark:bg-black text-black dark:text-white grid min-h-screen place-content-center overflow-hidden" }, _attrs))} data-v-2e62836b><div class="fixed -bottom-1/2 left-0 right-0 h-1/2 spotlight" data-v-2e62836b></div><div class="max-w-520px text-center" data-v-2e62836b><h1 class="text-8xl sm:text-10xl font-medium mb-8" data-v-2e62836b>${ssrInterpolate(__props.statusCode)}</h1><p class="text-xl px-8 sm:px-0 sm:text-4xl font-light mb-16 leading-tight" data-v-2e62836b>${ssrInterpolate(__props.description)}</p></div></div>`);
     };
   }
 };
 const _sfc_setup = _sfc_main.setup;
 _sfc_main.setup = (props, ctx) => {
   const ssrContext = useSSRContext();
-  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/nuxt/dist/app/components/error-500.vue");
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("../node_modules/.pnpm/nuxt@3.12.3_@parcel+watcher@2.4.1_@types+node@20.14.10_eslint@9.6.0_ioredis@5.4.1_magicast@0._lzmygl5ei7sryzin2nje4v4fpy/node_modules/nuxt/dist/app/components/error-500.vue");
   return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
 };
-const error500 = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-2c66185b"]]);
+const error500 = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-2e62836b"]]);
 
 export { error500 as default };
-//# sourceMappingURL=error-500-BWIVI7sq.mjs.map
+//# sourceMappingURL=error-500-BXgvPsLz.mjs.map

@@ -57,7 +57,7 @@ export default {
         }
         return false
       }
-      catch (err) {
+      catch { // (err) {
         // handle errors
         // console.log(`Error: ${err}`)
         return false
