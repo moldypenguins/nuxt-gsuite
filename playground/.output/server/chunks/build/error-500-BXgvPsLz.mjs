@@ -8,7 +8,6 @@ import 'fs';
 import 'path';
 import 'node:fs';
 import 'node:url';
-import '../../../../../../../../../../src/runtime/server/routes/recaptcha/[token].get';
 import '../routes/renderer.mjs';
 import 'vue-bundle-renderer/runtime';
 import 'devalue';

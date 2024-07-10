@@ -4,7 +4,6 @@ import { promises, existsSync } from 'fs';
 import { dirname as dirname$1, resolve as resolve$1, join } from 'path';
 import { promises as promises$1 } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import _69Te4e from '../../../../../../../../../src/runtime/server/routes/recaptcha/[token].get';
 
 const suspectProtoRx = /"(?:_|\\u0{2}5[Ff]){2}(?:p|\\u0{2}70)(?:r|\\u0{2}72)(?:o|\\u0{2}6[Ff])(?:t|\\u0{2}74)(?:o|\\u0{2}6[Ff])(?:_|\\u0{2}5[Ff]){2}"\s*:/;
 const suspectConstructorRx = /"(?:c|\\u0063)(?:o|\\u006[Ff])(?:n|\\u006[Ee])(?:s|\\u0073)(?:t|\\u0074)(?:r|\\u0072)(?:u|\\u0075)(?:c|\\u0063)(?:t|\\u0074)(?:o|\\u006[Ff])(?:r|\\u0072)"\s*:/;
@@ -2037,6 +2036,20 @@ function isError(input) {
 function getQuery(event) {
   return getQuery$1(event.path || "");
 }
+function getRouterParams(event, opts = {}) {
+  let params = event.context.params || {};
+  if (opts.decode) {
+    params = { ...params };
+    for (const key in params) {
+      params[key] = decode(params[key]);
+    }
+  }
+  return params;
+}
+function getRouterParam(event, name, opts = {}) {
+  const params = getRouterParams(event, opts);
+  return params[name];
+}
 function isMethod(event, expected, allowHead) {
   if (typeof expected === "string") {
     if (event.method === expected) {
@@ -3459,7 +3472,7 @@ const fetch = globalThis.fetch || createNodeFetch();
 const Headers$1 = globalThis.Headers || s;
 const AbortController = globalThis.AbortController || i;
 const ofetch = createFetch$1({ fetch, Headers: Headers$1, AbortController });
-const $fetch = ofetch;
+const $fetch$1 = ofetch;
 
 const nullBodyResponses = /* @__PURE__ */ new Set([101, 204, 205, 304]);
 function createCall(handle) {
@@ -3920,7 +3933,7 @@ const appConfig = defuFn(inlineAppConfig);
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "c5c579cb-0ed1-452e-b102-56c35b830b43",
+    "buildId": "fa28b5fd-a31e-4cdf-a22a-6fac97cad772",
     "buildAssetsDir": "/_nuxt/",
     "cdnURL": ""
   },
@@ -5212,51 +5225,51 @@ const assets = {
   "/_nuxt/B2SYFAF7.js": {
     "type": "text/javascript; charset=utf-8",
     "etag": "\"1cb7c-46QBA2JaLdJfLfjuOw8sqgPTE/s\"",
-    "mtime": "2024-07-10T19:15:59.272Z",
+    "mtime": "2024-07-10T19:53:58.444Z",
     "size": 117628,
     "path": "../public/_nuxt/B2SYFAF7.js"
   },
   "/_nuxt/BLiaNWc4.js": {
     "type": "text/javascript; charset=utf-8",
     "etag": "\"ab3-izgHqmHUjjDvNz6Y5j+spz4dmhg\"",
-    "mtime": "2024-07-10T19:15:59.276Z",
+    "mtime": "2024-07-10T19:53:58.446Z",
     "size": 2739,
     "path": "../public/_nuxt/BLiaNWc4.js"
   },
   "/_nuxt/error-404.9EjQ-aQ2.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"de4-32fgkh5bTG46p9fLOTpjLd8bjcs\"",
-    "mtime": "2024-07-10T19:15:59.276Z",
+    "mtime": "2024-07-10T19:53:58.445Z",
     "size": 3556,
     "path": "../public/_nuxt/error-404.9EjQ-aQ2.css"
   },
   "/_nuxt/error-500.BN3YerJ7.css": {
     "type": "text/css; charset=utf-8",
     "etag": "\"75c-ly2fzXMFdhYMxg25u7BXrUk5kjI\"",
-    "mtime": "2024-07-10T19:15:59.274Z",
+    "mtime": "2024-07-10T19:53:58.446Z",
     "size": 1884,
     "path": "../public/_nuxt/error-500.BN3YerJ7.css"
   },
   "/_nuxt/lggze1VM.js": {
     "type": "text/javascript; charset=utf-8",
     "etag": "\"200e-yTuvMgVTbPu3HLYed3fPr7Zp+hA\"",
-    "mtime": "2024-07-10T19:15:59.276Z",
+    "mtime": "2024-07-10T19:53:58.444Z",
     "size": 8206,
     "path": "../public/_nuxt/lggze1VM.js"
   },
   "/_nuxt/builds/latest.json": {
     "type": "application/json",
-    "etag": "\"47-1iMzHucxaZiBeYA1azuZyhieM20\"",
-    "mtime": "2024-07-10T19:15:59.936Z",
+    "etag": "\"47-K+QaJ6G563qDw4ofbLmXo1HJpF0\"",
+    "mtime": "2024-07-10T19:53:59.086Z",
     "size": 71,
     "path": "../public/_nuxt/builds/latest.json"
   },
-  "/_nuxt/builds/meta/c5c579cb-0ed1-452e-b102-56c35b830b43.json": {
+  "/_nuxt/builds/meta/fa28b5fd-a31e-4cdf-a22a-6fac97cad772.json": {
     "type": "application/json",
-    "etag": "\"8b-1vgYxei8MGqNviQtnIe/z9iA1EQ\"",
-    "mtime": "2024-07-10T19:15:59.937Z",
+    "etag": "\"8b-JzXjrZqBwkNWwBqbCFVunN2dp6M\"",
+    "mtime": "2024-07-10T19:53:59.087Z",
     "size": 139,
-    "path": "../public/_nuxt/builds/meta/c5c579cb-0ed1-452e-b102-56c35b830b43.json"
+    "path": "../public/_nuxt/builds/meta/fa28b5fd-a31e-4cdf-a22a-6fac97cad772.json"
   }
 };
 
@@ -5453,12 +5466,22 @@ const _f4b49z = eventHandler((event) => {
   return readAsset(id);
 });
 
+const _cb5YBh = defineEventHandler(async (event) => {
+  const { recaptcha } = useRuntimeConfig().gsuite;
+  const token = getRouterParam(event, "token");
+  return await $fetch(`https://www.google.com/recaptcha/api/siteverify`, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: `secret=${recaptcha.secretKey}&response=${token}`
+  });
+});
+
 const _lazy_MmJHwb = () => import('./routes/renderer.mjs').then(function (n) { return n.r; });
 
 const handlers = [
   { route: '', handler: _f4b49z, lazy: false, middleware: true, method: undefined },
   { route: '/__nuxt_error', handler: _lazy_MmJHwb, lazy: true, middleware: false, method: undefined },
-  { route: '/recaptcha/:token', handler: _69Te4e, lazy: false, middleware: false, method: "get" },
+  { route: '/recaptcha/:token', handler: _cb5YBh, lazy: false, middleware: false, method: "get" },
   { route: '/**', handler: _lazy_MmJHwb, lazy: true, middleware: false, method: undefined }
 ];
 
@@ -5833,5 +5856,5 @@ trapUnhandledNodeErrors();
 setupGracefulShutdown(listener, nitroApp);
 const nodeServer = {};
 
-export { $fetch as $, withTrailingSlash as A, withoutTrailingSlash as B, nodeServer as C, send as a, setResponseStatus as b, useNitroApp as c, setResponseHeaders as d, eventHandler as e, getQuery as f, getResponseStatus as g, createError$1 as h, getRouteRules as i, joinRelativeURL as j, getResponseStatusText as k, hasProtocol as l, isScriptProtocol as m, joinURL as n, sanitizeStatusCode as o, createHooks as p, isEqual as q, createRouter$1 as r, setResponseHeader as s, toRouteMatcher as t, useRuntimeConfig as u, defu as v, withQuery as w, stringifyParsedURL as x, stringifyQuery as y, parseQuery as z };
+export { $fetch$1 as $, withTrailingSlash as A, withoutTrailingSlash as B, nodeServer as C, send as a, setResponseStatus as b, useNitroApp as c, setResponseHeaders as d, eventHandler as e, getQuery as f, getResponseStatus as g, createError$1 as h, getRouteRules as i, joinRelativeURL as j, getResponseStatusText as k, hasProtocol as l, isScriptProtocol as m, joinURL as n, sanitizeStatusCode as o, createHooks as p, isEqual as q, createRouter$1 as r, setResponseHeader as s, toRouteMatcher as t, useRuntimeConfig as u, defu as v, withQuery as w, stringifyParsedURL as x, stringifyQuery as y, parseQuery as z };
 //# sourceMappingURL=runtime.mjs.map

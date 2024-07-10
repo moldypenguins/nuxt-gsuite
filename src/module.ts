@@ -116,7 +116,7 @@ export default defineNuxtModule<ModuleOptions>({
       // add route
       addServerHandler({
         route: '/recaptcha/:token',
-        handler: resolver.resolve('./runtime/server/routes/recaptcha/[token].get'),
+        handler: resolver.resolve('./runtime/server/api/recaptcha/[token].get'),
       })
     }
     else {

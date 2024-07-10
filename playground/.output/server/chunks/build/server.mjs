@@ -10,7 +10,6 @@ import 'fs';
 import 'path';
 import 'node:fs';
 import 'node:url';
-import '../../../../../../../../../../src/runtime/server/routes/recaptcha/[token].get';
 import 'vue-bundle-renderer/runtime';
 import 'devalue';
 import '@unhead/ssr';
@@ -927,10 +926,12 @@ watch(hidden, (value) => {
 const toggleBadge = (value) => hidden.value = value;
 function useRecaptcha() {
   const gsuite = (/* @__PURE__ */ useRuntimeConfig()).public.gsuite;
-  const execute = async (action) => grecaptcha.ready(async () => {
-    var _a;
-    return await grecaptcha.execute((_a = gsuite.recaptcha) == null ? void 0 : _a.siteKey, { action });
-  });
+  const execute = async (action) => grecaptcha.ready(
+    async () => {
+      var _a;
+      return await grecaptcha.execute((_a = gsuite.recaptcha) == null ? void 0 : _a.siteKey, { action });
+    }
+  );
   const verify = async (token) => await $fetch(`/api/recaptcha/${token}`);
   return {
     hidden,
@@ -965,7 +966,7 @@ const _sfc_main$2 = {
           }
         }
         return false;
-      } catch (err) {
+      } catch {
         return false;
       }
     }
