@@ -43,7 +43,7 @@ export default defineNuxtConfig({
   gsuite: {
     adsense: {
       clientId: '[GSUITE_ADSENSE_CLIENTID]',
-    }
+    },
     analytics: {
       measurementId: '[GSUITE_ANALYTICS_MEASUREMENTID]',
     },
