@@ -52,6 +52,15 @@ export interface ModuleOptions {
      */
     measurementId: string
   }
+  adsense?: {
+    /**
+     *  Client Id for Adsense.
+     *
+     * @default process.env.GSUITE_ADSENSE_CLIENTID
+     *
+     */
+    clientId: string
+  }
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -70,9 +79,27 @@ export default defineNuxtModule<ModuleOptions>({
     analytics: {
       measurementId: process.env.GSUITE_ANALYTICS_MEASUREMENTID as string,
     },
+    adsense: {
+      clientId: process.env.GSUITE_ADSENSE_CLIENTID as string,
+    },
   },
   setup(_options, _nuxt) {
     const resolver = createResolver(import.meta.url)
+
+    // add adsense
+    if (_options.adsense?.clientId && _options.adsense?.clientId?.length > 0) {
+      // add public options
+      _nuxt.options.runtimeConfig.public.gsuite = defu(_nuxt.options.runtimeConfig.public.gsuite || {}, {
+        adsense: {
+          clientId: _options.adsense.clientId,
+        },
+      })
+      // add plugin
+      addPlugin(resolver.resolve('./runtime/plugins/adsense'))
+    }
+    else {
+      logger.warn('A client id is required for Adsense. Plugin will not be loaded.')
+    }
 
     // add analytics
     if (_options.analytics?.measurementId && _options.analytics?.measurementId?.length > 0) {

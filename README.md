@@ -18,6 +18,11 @@
 ## Table of Contents
 
 - [Setup](#setup)
+* [Change Log](#change-log)
+* [Issues / Support](#issues-/-support)
+* [Contributing](#contributing)
+* [Code of Conduct](#code-of-conduct)
+* [Attributions](#attributions)
 - [Author](#author)
 - [License](#license)
 
@@ -36,28 +41,46 @@ export default defineNuxtConfig({
     'nuxt-gsuite',
   ],
   gsuite: {
+    adsense: {
+      clientId: '[GSUITE_ADSENSE_CLIENTID]',
+    }
+    analytics: {
+      measurementId: '[GSUITE_ANALYTICS_MEASUREMENTID]',
+    },
     recaptcha: {
       siteKey: '[GSUITE_RECAPTCHA_SITEKEY]',
       secretKey: '[GSUITE_RECAPTCHA_SECRETKEY]',
     },
-    analytics: {
-      measurementId: '[GSUITE_ANALYTICS_MEASUREMENTID]',
-    },
   },
 })
-```
+```  
+
+## Change Log
+See [CHANGELOG.md](CHANGELOG.md) for changes.  
+
+## Issues / Support
+Check the [Wiki](https://github.com/moldypenguins/nuxt-gsuite/wiki) for reference.  
+See [SECURITY.md](SECURITY.md) for feature requests or bug reports.  
+
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md) for more information.  
+
+## Code of Conduct
+See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)  
+
+## Attributions
+* [nuxt-recaptcha](https://github.com/arashsheyda/nuxt-recaptcha) - [Arash Sheyda](https://arashsheyda.me)  
 
 ## Author
-
 _**Craig Roberts**_  
 [![GitHub](https://img.shields.io/badge/moldypenguins-6e5494?labelColor=555555&logo=github&style=for-the-badge)](https://github.com/moldypenguins)
 [![Discord](https://img.shields.io/badge/@moldypenguins-5865F2?labelColor=555555&logo=discord&style=for-the-badge)](https://discordapp.com/users/346771877211144194)
-[![Telegram](https://img.shields.io/badge/@moldypenguins-27A7E7?labelColor=555555&logo=telegram&style=for-the-badge)](https://t.me/moldypenguins)
+[![Telegram](https://img.shields.io/badge/@moldypenguins-27A7E7?labelColor=555555&logo=telegram&style=for-the-badge)](https://t.me/moldypenguins)  
 
 ## License
-
 Copyright © 2024 CR Development. Licensed under the MIT license.  
-See [LICENSE.md](LICENSE.md) or [https://opensource.org/license/mit](https://opensource.org/license/mit) for more details
+See [LICENSE.md](LICENSE.md) or [https://opensource.org/license/mit](https://opensource.org/license/mit) for more details.  
+
 
 <!-- Badges -->
 [logo-src]: https://raw.githubusercontent.com/moldypenguins/nuxt-gsuite/master/.github/images/nuxt-gsuite.png

@@ -79,5 +79,8 @@ export default {
         Submit
       </button>
     </div>
+    <div style="text-align: center;">
+      <AdUnit :style="'display:inline-block;width:728px;height:90px'" :slot="1689914202" />
+    </div>
   </form>
 </template>
