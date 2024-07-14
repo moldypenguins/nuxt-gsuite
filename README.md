@@ -17,14 +17,13 @@
 
 ## Table of Contents
 
-- [Setup](#setup)
+* [Setup](#setup)
 * [Change Log](#change-log)
 * [Issues / Support](#issues-/-support)
 * [Contributing](#contributing)
-* [Code of Conduct](#code-of-conduct)
 * [Attributions](#attributions)
-- [Author](#author)
-- [License](#license)
+* [Author](#author)
+* [License](#license)
 
 ## Setup
 
@@ -64,9 +63,6 @@ See [SECURITY.md](SECURITY.md) for feature requests or bug reports.
 
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md) for more information.  
-
-## Code of Conduct
-See [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md)  
 
 ## Attributions
 * [nuxt-recaptcha](https://github.com/arashsheyda/nuxt-recaptcha) - [Arash Sheyda](https://arashsheyda.me)  
