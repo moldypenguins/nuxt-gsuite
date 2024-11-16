@@ -1,14 +1,16 @@
 import process from 'node:process'
-import { addImports, addPlugin, addServerHandler, createResolver, defineNuxtModule, logger } from '@nuxt/kit'
+import { addComponent, addImports, addPlugin, addServerHandler, createResolver, defineNuxtModule, logger } from '@nuxt/kit'
 import defu from 'defu'
 
 export { type RecaptchaResponse } from './types'
 
 declare module '#app' {
   const grecaptcha: any
+  const adsbygoogle: any
 
   interface Window {
     grecaptcha: any
+    adsbygoogle: any
   }
 }
 
@@ -96,6 +98,13 @@ export default defineNuxtModule<ModuleOptions>({
       })
       // add plugin
       addPlugin(resolver.resolve('./runtime/plugins/adsense'))
+      // add component
+      addComponent({
+        name: 'AdUnit',
+        export: 'default',
+        filePath: resolver.resolve('./runtime/components/AdUnit'),
+        // global: true
+      })
     }
     else {
       logger.warn('A client id is required for Adsense. Plugin will not be loaded.')
@@ -142,7 +151,7 @@ export default defineNuxtModule<ModuleOptions>({
       })
       // add route
       addServerHandler({
-        route: '/recaptcha/:token',
+        route: '/api/recaptcha/:token',
         handler: resolver.resolve('./runtime/server/api/recaptcha/[token].get'),
       })
     }
@@ -152,4 +161,5 @@ export default defineNuxtModule<ModuleOptions>({
 
     logger.success('`nuxt-gsuite` is ready!')
   },
+
 })

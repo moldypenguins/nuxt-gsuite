@@ -8,6 +8,9 @@ export default defineNuxtConfig({
     },
     analytics: {
       measurementId: '[GSUITE_ANALYTICS_MEASUREMENTID]'
+    },
+    adsense: {
+      clientId: '[GSUITE_ADSENSE_CLIENTID]'
     }
   },
   */

@@ -33,6 +33,7 @@ export default {
         if (token) {
           // verify recaptcha token
           const result = await this.recaptcha.verify(token)
+
           if (result.valid && !result.errors) {
             // save form
             /*
@@ -80,7 +81,7 @@ export default {
       </button>
     </div>
     <div style="text-align: center;">
-      <AdUnit :style="'display:inline-block;width:728px;height:90px'" :slot="1689914202" />
+      <AdUnit :adslot="1142026899" :adstyle="{ display: 'inline-block', width: '728px', height: '90px' }" />
     </div>
   </form>
 </template>

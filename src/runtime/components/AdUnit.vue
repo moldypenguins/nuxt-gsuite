@@ -1,28 +1,26 @@
 <script lang="ts">
-import type { ModuleOptions } from '~/src/module'
 import { useRuntimeConfig } from '#imports'
 
 export default {
-  setup() {
-    const props = defineProps({
-      style: { type: String, required: true },
-      slot: { type: String, required: true },
-    });
-    const { style, slot } = props
-    const clientId = (useRuntimeConfig().public.gsuite as ModuleOptions).adsense?.clientId
-    if (!clientId) { throw new Error("Adsense client id") }
-
-    return { style, slot, clientId }
+  name: 'Contact',
+  props: {
+    adstyle: { type: Object, required: true },
+    adslot: { type: Number, required: true },
   },
-}
+  setup(props) {
+    const { gsuite } = useRuntimeConfig().public as any
+    if (!gsuite.adsense.clientId) {
+      throw new Error('Adsense client id')
+    }
+    return { gsuite, props }
+  },
+
+} as any
 </script>
 
 <template>
-  <div align="center">
+  <div align="left">
     <!-- Google AdUnit -->
-    <ins class="adsbygoogle" :style="style" :data-ad-client="clientId" :data-ad-slot="slot"></ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <ins class="adsbygoogle" :style="props.adstyle" :data-ad-client="gsuite.adsense.clientId" :data-ad-slot="props.adslot" />
   </div>
 </template>
